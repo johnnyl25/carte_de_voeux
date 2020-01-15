@@ -1,0 +1,156 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+
+body{
+    background: url(../img/orig_66769.jpg) no-repeat;
+    background-size: cover;
+    height: 700px;
+    font-family: 'Alex Brush', cursive;
+
+    #form{
+        padding: 5%;
+        color: white;
+        background-color:rgba(133, 0, 1, 0.7);
+        border-radius: 50px;
+        box-shadow: 3px 5px 5px 3px black;
+        .btn-submit{
+            color:white;
+            border: 1px solid white;
+            &:hover{
+                color: black;
+                background-color: white;
+
+            }
+        }
+        
+    }
+}
+
+section {
+        #reponseMail {
+        color: white;
+        background-color:rgba(133, 0, 1, 0.5);
+        border-radius: 50px;
+        &:hover{
+            border-radius: 50px;
+            box-shadow: 3px 5px 5px 3px black;
+        }
+        .backImage1{
+            width: 100%;
+            position: absolute;
+            top: -3px;
+
+        }
+        .backImage2{
+            width: 100%;
+
+        }
+        .titleMail{
+            position: absolute;
+            top: 24%;
+            text-align: center;
+        }
+        .paraMail{
+            position: absolute;
+            top: 35%;
+            text-align: center;
+            font-size: 2rem; 
+        }
+        .paraMail1{
+            position: absolute;
+            top: 43%;
+            text-align: center;
+            font-size: 2rem;
+            font-family: 'Alex Brush', cursive; 
+        }
+        .paraMail2{
+            position: absolute;
+            top: 54%;
+            text-align: center;
+            font-size: 2rem; 
+        }
+        }
+    h1 {
+        &.titleMerry{
+        font-size: 4.5rem;
+        color: white;
+        font-family: 'Alex Brush', cursive;        
+        }
+    }
+
+    h2 {
+        &.titleChristmas{
+            font-size: 4.5rem;
+            color: white;
+            font-family: 'Playfair Display', serif;
+        }
+    }
+
+    p {
+        &.paragrapheMC{
+            font-size:  4.5rem;
+            color: white;
+            font-family: 'Alex Brush', cursive;
+        }
+    }
+    .rennou {
+        position: absolute;
+        top: -73px;
+        left: 500px;
+    }
+    .anim {
+        animation: bouge 10s infinite;
+    }
+    @keyframes bouge {
+        
+        from {
+            left: 520px;
+            transform: scaleX(1);
+        }
+        50% {
+            left: -20px;
+            transform: scaleX(1);
+        }
+        51% {
+            transform: scaleX(-1);
+        }
+        99%{
+            transform: scaleX(-1);
+        }
+        to{
+            left: 520px;
+            transform: scaleX(1);
+        }
+    }
+        .penguinou {
+        position: absolute;
+        top: 65px;
+        left: 240px;
+    }
+    #corne_droite{
+        animation: corneBouge 1.5s infinite alternate;
+        transform-origin: center;
+    }
+    @keyframes corneBouge {
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(10deg);
+        }
+    }
+    #corne_gauche{
+        animation: corneBouge1 1.5s infinite alternate;
+        transform-origin: center;
+    }
+    @keyframes corneBouge1 {
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(-10deg);
+        }
+    }
+}
